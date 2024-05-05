@@ -1,19 +1,25 @@
 import { NavLink } from 'react-router-dom';
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = () => {
-  const Navlinks = ['home', 'portfolio', 'about', 'contact', 'resume'];
+  const Navlinks = ['home', 'portfolio', 'about', 'contact'];
   return (
-    <nav className=" flex container m-auto justify-between px-4 h-full items-center">
-      <span className="text-4xl underline decoration-wavy decoration-cyan-400 font-semibold">
+    <nav className=" flex container m-auto justify-between px-4 h-full items-center sticky top-0 ">
+      <span className="text-4xl underline decoration-wavy decoration-secondary font-semibold">
         M<span className="">a</span>
         <span>Hi</span>
       </span>
-      <ul className="flex list-none space-x-3 uppercase">
+      <ul className="flex list-none  uppercase  justify-around transition duration-150 ease-out ">
         {Navlinks.map((item) => (
-          <li key={Math.random()}>
-            <NavLink to={`${item == 'home' ? '/' : item}`}>{item}</NavLink>
+          <li key={Math.random() }  className='w-[100px] text-center '>
+            <NavLink to={`${item == 'home' ? '/' : item}`} className={({isActive})=> isActive? "decoration-secondary font-bold " : " " }  >{item}</NavLink>
           </li>
         ))}
+      </ul>
+      <ul className='flex list-none w-auto '>
+        <li className='flex bg-secondary text-slate-600 font-semibold py-1 px-2'>
+          <NavLink to="resume" className='flex justify-center items-center gap-2 text-xl'> Resume <MdOutlineFileDownload /></NavLink>
+        </li>
       </ul>
     </nav>
   );

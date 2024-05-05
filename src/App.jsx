@@ -18,6 +18,7 @@ import Skill from './Pages/Skill';
 import Resume from './Pages/Resume';
 import Portfolio from './Pages/Portfolio';
 import ResumeLayout from './Layout/ResumeLayout';
+import NotFound from './Pages/NotFound';
 
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="skill" element={<Skill />} />
           <Route path='portfolio' element={<Portfolio />} />
+          <Route path='*' element={<NotFound/>}/>
           
         </Route>
           <Route path='resume' element={<ResumeLayout/>}> 
@@ -40,7 +42,7 @@ function App() {
         {/* Define separate route for login page */}
          <Route path="/login" element={<LoginLayout />}>
           <Route index element={<Login />} />
-        </Route> *
+        </Route>
       </>
     )
   );
