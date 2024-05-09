@@ -13,7 +13,7 @@ const RootLayout = () => {
             {<Outlet/>}
         </main>
         
-        <footer>
+        <footer className="text-center h-screen bg-primary text-secondary w-screen ">
             <Footer />
         </footer>
     </>
