@@ -4,9 +4,9 @@ import frontImg from '../assets/fontImg.jpeg';
 const Home = () => {
   console.log('home');
   return (
-    <section className=' bg-[#020200] min-h-dvh '>
+    <section className=' bg-[#020200] min-h-dvh  '>
       <div className=" container m-auto px-4 flex-row md:flex justify-between items-center content-center w-full h-full text-left  ">
-        <div className="info fles-1">
+        <div className="info fles-1 text-center md:text-left pt-5">
           <h1 className="text-5xl font-bold text-slate-100">
             HI, It's Muhammad MaHi
           </h1>
