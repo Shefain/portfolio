@@ -1,12 +1,8 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 const Footer = () => {
   return (
-    <section className=" flex flex-col justify-center items-center h-screen ">
-      <h1 className="text-4xl mb-5"> Front-Focused Full-Stack Developer </h1>
-      <p className="text-xl mb-5">
-        {' '}
-        Love To Work With JavaScript and TypeScript
-      </p>
+    <section className="px-5 flex justify-between items-center h-full ">
+      <h1 className="text-xl "> Muhammad MaHi </h1>
       <ul className="flex justify-center gap-5">
         <li className="text-3xl">
           <a href="linkedin.com" target="_blank">

@@ -1,6 +1,8 @@
+
+
 const Contact = () => {
     return ( 
-        <h1 className="text-3xl">Contact page</h1>
+        <h1> </h1>
      );
 }
  
