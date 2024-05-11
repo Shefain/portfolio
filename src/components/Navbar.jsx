@@ -1,5 +1,6 @@
 import { MdOutlineMenu } from 'react-icons/md';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,10 +17,10 @@ const Navbar = () => {
           toggle ? 'flex' : 'hidden'
         } md:flex gap-4 fixed top-0  right-0 md:static md:top-auto md:right-auto bg-primary text-secondary w-svw md:w-auto flex-col md:flex-row h-svh md:h-auto text-center md:pr-0 pr-2 py-3 md:py-0 justify-center `}
       >
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>CONTACT</li>
-        <li>PROJECTS</li>
+        <li><NavLink to='/'>HOME</NavLink></li>
+        <li><NavLink to='about'>ABOUT</NavLink></li>
+        <li><NavLink to='contact'>CONTACT</NavLink></li>
+        <li> <NavLink to='portfolio'>PROJECTS</NavLink></li>
         <li className=" md:hidden cursor-pointer" onClick={() => setToggle(false)}>
           {' '}
           X
