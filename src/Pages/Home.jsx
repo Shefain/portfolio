@@ -4,7 +4,7 @@ import frontImg from '../assets/fontImg.jpeg';
 const Home = () => {
   console.log('home');
   return (
-    <section className=' bg-[#020200] max-h-fit  '>
+    <section className=' bg-[#020200] h-vh '>
       <div className=" container m-auto px-4 flex-row md:flex justify-between items-center content-center w-full h-full text-left  ">
         <div className="info fles-1 text-center md:text-left pt-5">
           <h1 className="text-5xl font-bold text-slate-100">
@@ -22,7 +22,7 @@ const Home = () => {
           </NavLink>
         </div>
         <div className="frontImg h-full  flex-3">
-          <img src={frontImg} alt="" className='rounded text-center w-full rounded-5xl  'style={{ objectFit: "cover"}} />
+          <img src={frontImg} alt="Muhammad MaHi" className='rounded text-center w-full rounded-5xl  'style={{ objectFit: "cover"}} />
         </div>
       </div>
     </section>
